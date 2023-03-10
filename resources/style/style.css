@@ -20,3 +20,25 @@ body{
     background-size: contain;
     height: 477px;
 }
+
+.ctn-menu{
+    text-align: center;
+    padding-top: 30px;
+}
+.ctn-menu img{
+    width: 40px;
+}
+.ctn-textNames{
+    margin: 0 auto;
+    width: 39%;
+    text-align: center;
+}
+.txt-date{
+    font-size: 13px;
+    font-family: 'Baskervville', serif;
+}
+.txt-names{
+    font-size: 40px;
+    font-family: 'Baskervville', serif;
+    font-style: normal;
+}
