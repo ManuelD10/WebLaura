@@ -21,22 +21,24 @@ h2{
     padding: 8px;
 }
 
-.header{
-    background-image: url(../images/background-header-mob.jpg);
-    background-size: contain;
-    height: 477px;
-}
 .imgpofinDesk{
     display: none;
 }
+.header{
+    width: 100%;
+}
 
-.ctn-menu{
-    text-align: center;
-    padding-top: 30px;
+.imgHeader{
+    height: auto;
 }
-.ctn-menu img{
-    width: 40px;
+.imgHeader img{
+    max-width: 100%;
 }
+
+.headerDsk{
+    display: none;
+}
+
 .ctn-textNames{
     margin: 0 auto;
     width: 47%;
@@ -56,6 +58,7 @@ h2{
 }
 .ctn-porFin{
     background: #EDE6E2;
+    margin-top: -4px;
 }
 .txt-porFin{
     font-family: Baskerville;
@@ -195,15 +198,21 @@ h2{
 .flor3{
     display: none;
 }
-
+.imgpofinMob{
+    display: block;
+}
+.imgporfinDsk{
+    display: none;
+}
 @media (min-width: 768px) {
-    .header{
-        background-image: url(../images/background-header-dek.jpg);
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-color: #d8cfd2;
-    height: 456px;
+
+    .headerMob{
+      display: none;  
+    }
+    .headerDsk{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
     }
     .imgpofinMob{
         display: none;
@@ -270,14 +279,28 @@ h2{
 }
 
 @media (min-width: 1024px){
-    .imgpofinDesk{
-        width: 40%;
+    .imgporfinDsk{
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
     }
     .txt-porFin{
         height: 319px;
         margin-top: 48px;
         padding-left: 80px;
-        padding-right: 220px;
+        padding-right: 160px;
+        border: 0px;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        margin-top: 150px;
+    }
+    .txt-porFin h2{
+        font-size: 60px;
+    }
+    .txt-porFin p{
+        font-size: 20px;
     }
     .ctn-imageExample{
         overflow-x: hidden;
