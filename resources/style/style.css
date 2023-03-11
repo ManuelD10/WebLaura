@@ -1,9 +1,15 @@
-/* font-family: 'Baskervville', serif;
-font-family: 'Libre Baskerville', serif; */
+@font-face {
+    font-family: Brandon;
+    src: url(../fonts/brandon-grotesque-light-58a8a4b38001d.otf);
+    }
 
 body{
     margin: 0px;
     padding: 0px;
+}
+h2{
+    font-size: 43px;
+    font-weight: 200;
 }
 .stickyBar{
     background: black;
@@ -20,6 +26,9 @@ body{
     background-size: contain;
     height: 477px;
 }
+.imgpofinDesk{
+    display: none;
+}
 
 .ctn-menu{
     text-align: center;
@@ -30,15 +39,248 @@ body{
 }
 .ctn-textNames{
     margin: 0 auto;
-    width: 39%;
+    width: 47%;
     text-align: center;
 }
 .txt-date{
     font-size: 13px;
-    font-family: 'Baskervville', serif;
+    font-family:Brandon; 
+    letter-spacing: 1px;
 }
 .txt-names{
     font-size: 40px;
-    font-family: 'Baskervville', serif;
+    font-family: Baskerville;
     font-style: normal;
+    margin-top: 87px;
+    margin-bottom: 0px;
+}
+.ctn-porFin{
+    background: #EDE6E2;
+}
+.txt-porFin{
+    font-family: Baskerville;
+    border-top: 0.5px solid #000000;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.txt-porFin p{
+    line-height: 24px;
+}
+.ctn-dondeCuando{
+    background-image: url(../images/background-donde.jpg);
+    color: white;
+    font-family: Brandon;
+    font-size: 17px;
+    position: relative;
+    height: 966px;
+}
+.ctn-dondeCuando h2{
+    font-family: Baskerville;
+    text-align: center;
+    margin: 0px;
+    padding: 24px 0px;
+}
+.ctn-txt-donde{
+    margin-left: 24px;
+}
+.ctn-txt-donde p{
+    margin: 5px;
+}
+.txt-donde{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.margin-donde{
+    margin-top: 40px;
+}
+.img1-donde{
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+.ctn-map{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.txt-lluvia{
+    font-family: Baskerville;
+    font-style: italic;
+    font-size: 34px;
+    margin-left: 24px;
+}
+.ctn-dress{
+    background: #CCC6BA;
+    text-align: center;
+    font-family: Baskerville;
+    padding-bottom: 40px;
+}
+.title-dress{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 32px;
+}
+.title-dress h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.ctn-imageExample{
+    display: flex;
+    width: 90%;
+    overflow-x: scroll;
+    margin: 32px auto;
+}
+.ctn-imageExample img{
+    border-radius: 8px;
+}
+
+.ctn-imgExample{
+    margin-left: 24px;
+}
+.btn-ideas{
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 20px 32px;
+    width: fit-content;
+    font-size: 21px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+.btn-ideas:hover{
+    background: white;
+}
+.btn-ideas a{
+    text-decoration: none;
+    color: #000000;
+}
+.ctn-confirm{
+    background-image: url(../images/background-confirm-mob.jpg);
+    height: 602px;
+    display: flex;
+}
+.ctn-form{
+    background: white;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.ctn-form h2{
+    font-size: 32px;
+}
+.ctn-instagram{
+    background: #9E9C74;
+}
+.title-instagram{
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.title-instagram h2{
+    font-size: 34px;
+}
+.line-desktop{
+    display: none;
+}
+.flor2{
+    display: none;
+}
+.flor3{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header{
+        background-image: url(../images/background-header-dek.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #d8cfd2;
+    height: 456px;
+    }
+    .imgpofinMob{
+        display: none;
+    }
+    .ctn-porFin{
+        display: flex;
+    }
+    .imgpofinDesk{
+        display: block;
+        width: 50%;
+    }
+    .txt-porFin{
+        text-align: left;
+    }
+    .ctn-txt-donde{
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+    }
+    .txt-donde{
+        width: fit-content;
+    margin: 0 auto;
+    }
+    .img1-donde {
+        top: 440px;
+    }
+    .ctn-details-donde{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+    .border-left{
+        border-left: 1px solid white;
+    }
+    .txt-lluvia{
+        text-align: center;
+    }
+    .line-desktop{
+        display: block;
+        width: 1px;
+        margin: 32px auto;
+        border-left: 1px solid white;
+        height: 60px;
+    }
+    .flor2{
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: -4px;
+    }
+    .flor3{
+        display: block;
+        position: absolute;
+        bottom: -7px;
+        left: 85px;
+    }
+    .brDesktop{
+        display: none;
+    }
+    .ctn-form{
+        width: 650px;
+    }
+}
+
+@media (min-width: 1024px){
+    .imgpofinDesk{
+        width: 40%;
+    }
+    .txt-porFin{
+        height: 319px;
+        margin-top: 48px;
+        padding-left: 80px;
+        padding-right: 220px;
+    }
+    .ctn-imageExample{
+        overflow-x: hidden;
+        justify-content: space-around;
+    }
 }
