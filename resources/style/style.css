@@ -27,7 +27,9 @@ h2{
 .header{
     width: 100%;
 }
-
+.headerMob{
+    width: 100%;
+}
 .imgHeader{
     height: auto;
 }
@@ -78,7 +80,7 @@ h2{
     font-family: Brandon;
     font-size: 17px;
     position: relative;
-    height: 966px;
+    height: 1016px;
 }
 .ctn-dondeCuando h2{
     font-family: Baskerville;
@@ -200,6 +202,7 @@ h2{
 }
 .imgpofinMob{
     display: block;
+    width: 100%;
 }
 .imgporfinDsk{
     display: none;
