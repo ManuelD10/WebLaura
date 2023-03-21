@@ -207,6 +207,14 @@ h2{
 .imgporfinDsk{
     display: none;
 }
+.ig-plugin{
+    width: 85%;
+    margin: 0 auto;
+}
+.snapwidget-widget{
+    height: 350px;
+}
+
 @media (min-width: 768px) {
 
     .headerMob{
@@ -279,6 +287,9 @@ h2{
     .ctn-form{
         width: 650px;
     }
+    .snapwidget-widget{
+        height: 650px;
+    }
 }
 
 @media (min-width: 1024px){
@@ -308,5 +319,8 @@ h2{
     .ctn-imageExample{
         overflow-x: hidden;
         justify-content: space-around;
+    }
+    .snapwidget-widget{
+        height: 950px;
     }
 }
